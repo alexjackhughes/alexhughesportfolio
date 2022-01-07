@@ -22,8 +22,8 @@ const Index = ({ allPosts }: Props) => {
             Alex Hughes | CTO, Startup Founder, React Developer in Bristol
           </title>
         </Head>
+        <Header />
         <Container>
-          <Header />
           <div>
             <Intro />
             {allPosts.length > 0 && <MoreStories posts={allPosts} />}
