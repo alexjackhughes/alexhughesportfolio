@@ -1,9 +1,10 @@
+import Head from "next/head";
+
 import Container from "../../components/container";
 import MoreStories from "../../components/more-stories";
 import Intro from "../../components/intro";
 import Layout from "../../components/layout";
 import { getAllPosts } from "../../lib/api";
-import Head from "next/head";
 import Post from "../../types/post";
 
 type Props = {
@@ -11,15 +12,16 @@ type Props = {
 };
 
 const Index = ({ allPosts }: Props) => {
+  const morePosts = allPosts;
   return (
     <>
       <Layout>
         <Head>
-          <title>Blog by Alex Hughes</title>
+          <title>Alex Hughes | CTO & Startup Founder in Bristol</title>
         </Head>
         <Container>
           <Intro />
-          {allPosts.length > 0 && <MoreStories posts={allPosts} />}
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
     </>

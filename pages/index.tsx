@@ -1,38 +1,32 @@
+import Head from "next/head";
+
 import Container from "../components/container";
 import MoreStories from "../components/more-stories";
+import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
-import Head from "next/head";
 import Post from "../types/post";
-
-import Header from "../modules/Header";
-import Footer from "../modules/Footer";
 
 type Props = {
   allPosts: Post[];
 };
 
 const Index = ({ allPosts }: Props) => {
+  const morePosts = allPosts;
   return (
     <>
       <Layout>
         <Head>
-          <title>
-            Alex Hughes | CTO, Startup Founder, React Developer in Bristol
-          </title>
+          <title>Alex Hughes | CTO & Startup Founder in Bristol</title>
         </Head>
-        <Header />
         <Container>
-          <div>
-            <Intro />
-            {allPosts.length > 0 && <MoreStories posts={allPosts} />}
-            <Intro />
-            {allPosts.length > 0 && <MoreStories posts={allPosts} />}
-            <Intro />
-            {allPosts.length > 0 && <MoreStories posts={allPosts} />}
-          </div>
-          <Footer />
+          <Intro />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <Intro />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />} <Intro />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />} <Intro />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
     </>
