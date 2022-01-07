@@ -21,12 +21,7 @@ const Index = ({ allPosts }: Props) => {
           <title>Alex Hughes | CTO & Startup Founder in Bristol</title>
         </Head>
         <Container>
-          <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />} <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />} <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <h1>Hey</h1>
         </Container>
       </Layout>
     </>

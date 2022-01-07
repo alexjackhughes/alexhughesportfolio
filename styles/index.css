@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;200;500;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,4 +34,19 @@
   100% {
     transform: scale(1, 1) translateY(0);
   }
+}
+
+body,
+.open {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.poppins {
+  font-family: "Poppins", sans-serif !important;
 }
