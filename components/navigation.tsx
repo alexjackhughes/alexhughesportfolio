@@ -1,10 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-
-import linkedin from "./icons/linkedin.svg";
-import twitter from "./icons/twitter.svg";
-import github from "./icons/github.svg";
+import Social from "./social";
 
 const Naivgation = () => {
   return (
@@ -16,7 +13,9 @@ const Naivgation = () => {
     >
       <div className="flex flex-col xl:flex-row justify-between items-center container mx-auto px-5 xl:px-64">
         <Logo />
-        <SocialLinks />
+        <div className="order-3 md:order-2 hidden md:flex">
+          <Social />
+        </div>
         <NavLinks />
       </div>
     </header>
@@ -55,25 +54,8 @@ const Logo = () => {
   );
 };
 
-const SocialLinks: React.FC = () => (
-  <div className="order-3 md:order-2">
-    <NavLink href="https://twitter.com/alexjackhughes">
-      <Image
-        src="/icons/twitter.svg"
-        className="cursor-pointer bounce"
-        height={75}
-        width={75}
-      />
-    </NavLink>
-    <NavLink href="https://github.com/alexjackhughes">Github</NavLink>
-    <NavLink href="https://www.linkedin.com/in/alexjackhughes/">
-      LinkedIn
-    </NavLink>
-  </div>
-);
-
 const NavLinks: React.FC = () => (
-  <div className="order-2 md:order-3">
+  <div className="order-2 md:order-3 mb-3 sm:mb-0">
     <NavLink href="/">Home</NavLink>
     <NavLink href="/posts">Blog</NavLink>
   </div>
