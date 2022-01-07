@@ -4,6 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+.open {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+
 .bounce {
   animation-name: bounce;
   animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
@@ -36,17 +51,20 @@
   }
 }
 
-body,
-.open {
-  font-family: "Open Sans", sans-serif !important;
+.skittles {
+  background-image: -webkit-linear-gradient(10deg, #00eab2, #00ced9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+  animation: hue 10s infinite linear;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.poppins {
-  font-family: "Poppins", sans-serif !important;
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }

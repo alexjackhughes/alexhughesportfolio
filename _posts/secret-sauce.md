@@ -1,6 +1,6 @@
 ---
 title: "The Secret Sauce of Coding"
-excerpt: "Coding is a test of will."
+excerpt: "Coding is a test of will. Here's what they don't tell you about a life at the keyboard."
 coverImage: "/assets/blog/secret-sauce/cover.jpg"
 date: "2019-05-06T05:35:07.322Z"
 author:
@@ -13,10 +13,6 @@ ogImage:
 ### Coding is a test of will.
 
 That’s what people don’t tell you about this career — that once the daily stand up is finished, you’ve grabbed a tall Cappuccino from Starbucks, and you’re ready to carpe diem this shit — that 99% of your time is spent alone, fingers primed on the keyboard and eyes glued to the screen, trying to figure out what the heck is going on.
-
-```js
-const x = () => {};
-```
 
 I learned to code in like a super intensive MSc, and you get a feel for this during the weekly coding exercises. But it’s only a taste. A taste of what it feels like to confront a problem every day, that you don’t even have the tools to understand how you’d go about solving it.
 

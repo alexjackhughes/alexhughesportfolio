@@ -13,6 +13,7 @@ type Props = {
 
 const Index = ({ allPosts }: Props) => {
   const morePosts = allPosts;
+
   return (
     <>
       <Layout>
@@ -20,7 +21,6 @@ const Index = ({ allPosts }: Props) => {
           <title>Alex Hughes | CTO & Startup Founder in Bristol</title>
         </Head>
         <Container>
-          <Intro />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
