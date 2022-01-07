@@ -6,6 +6,9 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Post from "../types/post";
 
+import Header from "../modules/Header";
+import Footer from "../modules/Footer";
+
 type Props = {
   allPosts: Post[];
 };
@@ -15,11 +18,21 @@ const Index = ({ allPosts }: Props) => {
     <>
       <Layout>
         <Head>
-          <title>Alex Hughes | CTO & Startup Founder</title>
+          <title>
+            Alex Hughes | CTO, Startup Founder, React Developer in Bristol
+          </title>
         </Head>
         <Container>
-          <Intro />
-          {allPosts.length > 0 && <MoreStories posts={allPosts} />}
+          <Header />
+          <div>
+            <Intro />
+            {allPosts.length > 0 && <MoreStories posts={allPosts} />}
+            <Intro />
+            {allPosts.length > 0 && <MoreStories posts={allPosts} />}
+            <Intro />
+            {allPosts.length > 0 && <MoreStories posts={allPosts} />}
+          </div>
+          <Footer />
         </Container>
       </Layout>
     </>
