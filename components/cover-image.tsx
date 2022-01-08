@@ -9,15 +9,13 @@ type Props = {
 
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
-    <div className="rounded">
-      <img
-        src={src}
-        alt={`Cover Image for ${title}`}
-        className={cn("shadow-sm rounded-2xl", {
-          "hover:shadow-lg transition-shadow duration-200": slug,
-        })}
-      />
-    </div>
+    <img
+      src={src}
+      alt={`Cover Image for ${title}`}
+      className={cn("shadow-sm rounded-2xl", {
+        "hover:shadow-lg transition-shadow duration-200": slug,
+      })}
+    />
   );
   return (
     <div className="sm:mx-0">

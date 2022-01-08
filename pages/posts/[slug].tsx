@@ -39,9 +39,13 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
+                textLength={post.content.length}
               />
               <PostBody content={post.content} />
               <Avatar name={post.author.name} picture={post.author.picture} />
+              <p className="text-center">
+                {new Date(post.date).toLocaleDateString()}
+              </p>
             </article>
           </>
         )}

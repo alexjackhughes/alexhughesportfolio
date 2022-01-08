@@ -1,7 +1,7 @@
 const lengthToMinutes = (length: number): string => {
-  const minutes = Math.round(250 / length);
+  const minutes = Math.round(length / 250);
 
-  return `You can read this in ${minutes} minute${minutes === 0 ? "" : "s"}`;
+  return `${minutes} minute${minutes === 0 ? "" : "s"}`;
 };
 
 export default lengthToMinutes;

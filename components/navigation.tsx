@@ -57,7 +57,7 @@ const Logo = () => {
 const NavLinks: React.FC = () => (
   <div className="order-2 md:order-3 mb-3 sm:mb-0 mt-2 sm:mt-0">
     <NavLink href="/">Home</NavLink>
-    <NavLink href="/posts">Blog</NavLink>
+    <NavLink href="/posts">Posts</NavLink>
   </div>
 );
 

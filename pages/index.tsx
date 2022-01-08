@@ -7,6 +7,8 @@ import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Post from "../types/post";
+import HomeSplash from "../components/home-splash";
+import HomeAbout from "../components/home-about";
 
 type Props = {
   allPosts: Post[];
@@ -21,7 +23,9 @@ const Index = ({ allPosts }: Props) => {
           <title>Alex Hughes | CTO & Startup Founder in Bristol</title>
         </Head>
         <Container>
-          <h1>Hey</h1>
+          <HomeSplash />
+          <HomeAbout />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
     </>

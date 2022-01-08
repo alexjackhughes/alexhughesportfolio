@@ -16,8 +16,8 @@ const PostHeader = ({ title, coverImage, date, textLength = 0 }: Props) => {
     <>
       <PostTitle>{title}</PostTitle>
       <CoverImage title={title} src={coverImage} />
-      <h4 className="text-xl font-normal text-sky-500 text-center my-7">
-        {lengthToMinutes(30)}
+      <h4 className="text-xl font-normal text-slate-900 text-center my-7 text">
+        You can read this in {lengthToMinutes(textLength)}
       </h4>
     </>
   );
