@@ -25,7 +25,7 @@ const Index = ({ allPosts }: Props) => {
         <HomeSplash />
         <HomeAbout />
         <Container>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold md:leading-none text-center md:text-left text-sky-900 mb-12 mt-10">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold md:leading-none text-center md:text-left text-sky-900 mb-12 mt-12">
             What I've been writing
           </h1>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
