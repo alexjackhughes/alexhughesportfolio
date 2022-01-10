@@ -7,9 +7,9 @@ const Naivgation = () => {
   return (
     <header
       style={{
-        background: "rgba(32, 43, 65, 0.89)",
+        background: "rgba(11,36,64, 0.89)",
       }}
-      className="sticky top-0 z-50 py-2 bg-sky-500"
+      className="sticky top-0 z-50 py-2"
     >
       <div className="flex flex-col xl:flex-row justify-between items-center container mx-auto px-5 xl:px-64">
         <Logo />
@@ -66,7 +66,7 @@ interface Props {
 }
 const NavLink: React.FC<Props> = ({ href, children }) => (
   <Link href={href}>
-    <a className="hover:bg-slate-100 p-3 rounded poppins text-sky-800 font-semibold mx-2">
+    <a className="hover:bg-slate-100 p-3 rounded poppins text-sky-900 font-semibold mx-2">
       {children}
     </a>
   </Link>

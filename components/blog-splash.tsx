@@ -1,15 +1,18 @@
 const BlogSplash: React.FC = () => {
   return (
-    <div className="h-full w-full py-32 md:py-64">
-      <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold md:leading-none text-center md:text-left text-sky-800">
-        My <span className="skittles">Library</span>
-      </h1>
-      <p className="mt-6 poppins text-sky-800 text-center md:text-left">
-        A place to share my completely unbiased opinion
-      </p>
-      <p className="poppins text-sky-800 text-center md:text-left">
-        on the entirety of civilisation.
-      </p>
+    <div className="h-full w-screen flex flex-col bg-sky-800 justify-between">
+      <div className="my-32 md:mt-64 container mx-auto px-5 xl:px-64">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold md:leading-none text-center md:text-left text-sky-100">
+          My <span className="skittles">Library</span>
+        </h1>
+        <div className="poppins text-sky-100 text-center md:text-left mt-6">
+          <p className="mb-1">
+            A place to share my completely unbiased opinion
+          </p>
+          <p>on the entirety of civilisation.</p>
+        </div>
+      </div>
+      <img src="/waves/splash.svg" className="w-screen" />
     </div>
   );
 };
