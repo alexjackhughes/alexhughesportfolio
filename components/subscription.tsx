@@ -36,7 +36,7 @@ const Subscription: React.FC = () => {
     <Container>
       <div className="flex flex-col mt-10 lg:mt-32 text-center mx-10 lg:mx-32">
         <h3 className="text-4xl lg:text-6xl mb-6 leading-snug font-bold">
-          What's next?
+          What next?
         </h3>
         <p className="text-sky-100 text-xl mb-3">
           A little less than a decade ago I quit my job, spent my last £100 on
