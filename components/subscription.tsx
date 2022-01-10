@@ -7,29 +7,15 @@ const Subscription: React.FC = () => {
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const lowercaseEmail = lowercaseString(email);
-    const firstName = getEmailUsername(email);
+    const lowercaseEmail = email.toLowerCase();
 
-    (async () => {
-      const rawResponse = await fetch(
-        "https://www.getrevue.co/api/v2/subscribers",
-        {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-            mode: "no-cors",
-            Authorization: `TOKEN ${process.env.MAIL_API_KEY}`,
-          },
-          body: JSON.stringify({
-            email: lowercaseEmail,
-            first_name: firstName,
-            double_opt_in: false,
-          }),
-        }
-      );
-    })();
+    const res = await fetch("/api/subscribe", {
+      body: JSON.stringify({ email: lowercaseEmail }),
+      headers: { "Content-Type": "application/json" },
+      method: "POST",
+    });
+
+    await res.json();
 
     setSuccess(true);
   };
@@ -94,19 +80,5 @@ const Subscription: React.FC = () => {
     </Container>
   );
 };
-
-function getEmailUsername(emailAddress: string): string {
-  const search = emailAddress.split("@")[0];
-
-  return capitalizeFirstLetter(search);
-}
-
-function capitalizeFirstLetter(string: string) {
-  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-}
-
-function lowercaseString(string: string) {
-  return string.toLowerCase();
-}
 
 export default Subscription;
