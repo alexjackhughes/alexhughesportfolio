@@ -16,17 +16,23 @@ type Props = {
 const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
     <Link as={`/posts/${slug}`} href="/posts/[slug]">
-      <div className="rounded-lg cursor-pointer shadow-2xl">
+      <div className="rounded-2xl cursor-pointer shadow-2xl bg-sky-800">
         <div className="mb-5 rounded-md">
-          <CoverImage slug={slug} title={title} src={coverImage} />
+          <CoverImage
+            slug={slug}
+            title={title}
+            src={coverImage}
+            isFullyRounded="rounded-t-2xl"
+          />
         </div>
         <div className="mx-6 my-4">
           <h3 className="text-3xl mb-3 leading-snug font-bold mr-10">
             <a>{title}</a>
           </h3>
-          {/* <p className="text-lg leading-relaxed mb-4 text-sky-800">{excerpt}</p> */}
-          <div className="text-right">
-            {new Date(date).toLocaleDateString()}
+          <div className="flex flex-col justify-right items-end">
+            <p className="bg-slate-100 p-3 rounded poppins text-sky-800">
+              {new Date(date).toLocaleDateString()}
+            </p>
           </div>
         </div>
       </div>

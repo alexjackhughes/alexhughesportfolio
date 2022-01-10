@@ -1,10 +1,13 @@
 import Image from "next/image";
+import Container from "./container";
 import Social from "./social";
+import Subscription from "./subscription";
 
 const Footer: React.FC = () => {
   return (
-    <div>
-      <img src="/waves/footer.svg" className="w-full -mb-3 md:-mb-10" />
+    <>
+      <Subscription />
+      <img src="/waves/footer.svg" className="w-full -mb-3 md:-mb-10 -z-10" />
       <footer className="w-full bg-pink flex flex-row items-center">
         <div className="mx-auto flex flex-col items-center my-10 md:my-20">
           <Image
@@ -17,11 +20,12 @@ const Footer: React.FC = () => {
           </p>
           <p className="poppins text-sky-800">{new Date().getUTCFullYear()}</p>
           <div className="mt-10">
+            <p className="poppins text-sky-800 mb-1.5 text-center">Say hi!</p>
             <Social />
           </div>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 

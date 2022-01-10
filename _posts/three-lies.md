@@ -14,7 +14,7 @@ Okay people, grab your goggles because I’m here to bust some myths wide open.
 
 You see, when you’re a “normal person” (read: not super smart) and also happen to be a successful software engineer — a lot of people ask you what your deal is.
 
-With a degree in Economics, a life in software engineering wasn’t quite what I was expecting. I simply took the least bad option in my career, right up until the point where people were paying money to code.
+With a degree in Economics, a life in software engineering wasn’t _quite_ what I was expecting. I simply took the least bad option in my career, right up until the point where people were paying money to code.
 
 With that kind of background, it’s no wonder I’m such a massive evangelist that literally anyone can learn to code.
 
