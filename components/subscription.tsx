@@ -3,6 +3,7 @@ import Container from "./container";
 
 const Subscription: React.FC = () => {
   const [email, setEmail] = useState("");
+  const [success, setSuccess] = useState(false);
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -14,9 +15,11 @@ const Subscription: React.FC = () => {
         "https://www.getrevue.co/api/v2/subscribers",
         {
           method: "POST",
+          mode: "no-cors",
           headers: {
             Accept: "application/json",
             "Content-Type": "application/json",
+            mode: "no-cors",
             Authorization: `TOKEN ${process.env.MAIL_API_KEY}`,
           },
           body: JSON.stringify({
@@ -26,10 +29,9 @@ const Subscription: React.FC = () => {
           }),
         }
       );
-      const content = await rawResponse.json();
-
-      console.log(content);
     })();
+
+    setSuccess(true);
   };
 
   return (
@@ -56,23 +58,37 @@ const Subscription: React.FC = () => {
           and I'll add you to the list!
         </p>
         <div className="bg-white rounded py-8 px-8">
-          <h3 className="text-4xl mb-3 leading-snug font-bold text-sky-900">
-            It's free! 📬
-          </h3>
-          <form onSubmit={onSubmit}>
-            <input
-              value={email}
-              placeholder="johnny@cash.com"
-              onChange={(e) => setEmail(e.target.value)}
-              className="text-sky-900 poppins border border-sky-800 p-3 rounded placeholder:text-sky-900 focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-900 w-full"
-            />
-            <button
-              className="bg-sky-800 p-3 mt-6 rounded-lg text-white poppins text-lg font-semibold focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-900"
-              onSubmit={onSubmit}
-            >
-              Get my free book!
-            </button>
-          </form>
+          {success ? (
+            <>
+              <h3 className="text-4xl mb-3 leading-snug font-bold text-sky-900">
+                Wow, thanks!
+              </h3>
+              <p className="text-sky-900 text-xl poppins">
+                Thanks a lot for subscribing, you'll be the first to recieve the
+                very first chapter when it's hot off the press!
+              </p>
+            </>
+          ) : (
+            <>
+              <h3 className="text-4xl mb-3 leading-snug font-bold text-sky-900">
+                It's free! 📬
+              </h3>
+              <form onSubmit={onSubmit}>
+                <input
+                  value={email}
+                  placeholder="johnny@cash.com"
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="text-sky-900 poppins border border-sky-800 p-3 rounded placeholder:text-sky-900 focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-900 w-full"
+                />
+                <button
+                  className="bg-sky-800 p-3 mt-6 rounded-lg text-white poppins text-lg font-semibold focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-900"
+                  onSubmit={onSubmit}
+                >
+                  Get my free book!
+                </button>
+              </form>
+            </>
+          )}
         </div>
       </div>
     </Container>
