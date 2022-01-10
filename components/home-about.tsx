@@ -1,18 +1,29 @@
+import Container from "./container";
+
 const HomeAbout: React.FC = () => {
   return (
-    <div>
-      <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold md:leading-none text-center md:text-left text-sky-800">
-        Who am I?
-      </h1>
-      <p className="mt-6 text text-sky-800 text-center md:text-left leading-relaxed text-2xl">
-        My name is Alexander Jack Hughes. But you can call me Alex. I'm a
-        full-stack engineer and builder of high-growth startups.
-      </p>
-      <p className="mt-6 text text-sky-800 text-center md:text-left leading-relaxed text-2xl">
-        My name is Alexander Jack Hughes. But you can call me Alex. I'm a
-        full-stack engineer and builder of high-growth startups.
-      </p>
-    </div>
+    <>
+      <div className="bg-sky-800 py-20">
+        <Container>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold md:leading-none text-center md:text-left text-sky-100 mb-10">
+            Lorem Ipsum
+          </h1>
+          <div className=" lg:w-2/3">
+            <p className="text-sky-100 text-xl mb-3">
+              It still needs a bit of polish, which is why I've decided to
+              release it chapter by chapter to everyone who wants it - just
+              subscribe below and I'll add you to the list!
+            </p>
+            <p className="text-sky-100 text-xl mb-1">
+              It still needs a bit of polish, which is why I've decided to
+              release it chapter by chapter to everyone who wants it - just
+              subscribe below and I'll add you to the list!
+            </p>
+          </div>
+        </Container>
+      </div>
+      <img src="/waves/home.svg" className="w-screen rotate-180" />
+    </>
   );
 };
 

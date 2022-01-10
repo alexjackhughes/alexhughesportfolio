@@ -12,7 +12,7 @@ const BlogSplash: React.FC = () => {
           <p>on the entirety of civilisation.</p>
         </div>
       </div>
-      <img src="/waves/splash.svg" className="w-screen" />
+      <img src="/waves/blogs.svg" className="w-screen" />
     </div>
   );
 };
