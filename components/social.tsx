@@ -1,6 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Social: React.FC = () => {
+interface Props {
+  isWhite?: boolean;
+}
+
+const Social: React.FC<Props> = ({ isWhite = false }) => {
+  const color = isWhite ? "text-white" : "text-sky-900";
   return (
     <div className="flex flex-row items-center w-full justify-center">
       <a
@@ -10,7 +15,7 @@ const Social: React.FC = () => {
       >
         <FontAwesomeIcon
           icon={{ prefix: "fab", iconName: "twitter" }}
-          className="text-sm text-sky-900 h-12 w-12 hover:bg-slate-100 p-3 rounded"
+          className={`text-sm h-12 w-12 hover:bg-slate-100 p-3 rounded ${color}`}
         />
       </a>
       <a
@@ -20,7 +25,7 @@ const Social: React.FC = () => {
       >
         <FontAwesomeIcon
           icon={{ prefix: "fab", iconName: "github-alt" }}
-          className="text-sm text-sky-900 h-12 w-12 mx-2 hover:bg-slate-100 p-3 rounded"
+          className={`text-sm h-12 w-12 hover:bg-slate-100 p-3 rounded ${color}`}
         />
       </a>
       <a
@@ -30,7 +35,7 @@ const Social: React.FC = () => {
       >
         <FontAwesomeIcon
           icon={{ prefix: "fab", iconName: "linkedin-in" }}
-          className="text-sm text-sky-900 h-12 w-12 hover:bg-slate-100 p-3 rounded"
+          className={`text-sm h-12 w-12 hover:bg-slate-100 p-3 rounded ${color}`}
         />
       </a>
     </div>

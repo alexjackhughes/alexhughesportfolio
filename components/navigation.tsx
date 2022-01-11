@@ -66,7 +66,7 @@ interface Props {
 }
 const NavLink: React.FC<Props> = ({ href, children }) => (
   <Link href={href}>
-    <a className="hover:bg-slate-100 p-3 rounded poppins text-sky-900 font-semibold mx-2">
+    <a className="hover:bg-slate-100 p-3 rounded poppins text-sky-100 hover:text-sky-900 font-semibold mx-2">
       {children}
     </a>
   </Link>

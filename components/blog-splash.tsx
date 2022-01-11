@@ -5,11 +5,11 @@ const BlogSplash: React.FC = () => {
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold md:leading-none text-center md:text-left text-white mb-10">
           My <span className="skittles">Library</span>
         </h1>
-        <div className="poppins text-sky-100 text-center md:text-left mt-6 text-xl">
+        <div className="poppins text-sky-100 text-center md:text-left mt-6 text-xl lg:w-5/12">
           <p className="mb-1">
-            A place to share my completely unbiased opinion
+            A place to share my completely unbiased opinion on the entirety of
+            civilisation
           </p>
-          <p>on the entirety of civilisation.</p>
         </div>
       </div>
       <img src="/waves/blogs.svg" className="w-screen" />

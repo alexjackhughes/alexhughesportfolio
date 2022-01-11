@@ -8,7 +8,10 @@ body,
 .text {
   font-family: "Quattrocento", sans-serif !important;
   background-color: #0b2440;
-  color: white;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif !important;
 }
 
 h1,
@@ -16,9 +19,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.poppins {
+h6 {
   font-family: "Poppins", sans-serif !important;
+  color: white;
 }
 
 .bounce {

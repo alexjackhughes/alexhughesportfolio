@@ -10,7 +10,7 @@ ogImage:
   url: "/assets/blog/secret-sauce/cover.jpg"
 ---
 
-### Coding is a test of will.
+Coding is a test of will.
 
 That’s what people don’t tell you about this career — that once the daily stand up is finished, you’ve grabbed a tall Cappuccino from Starbucks, and you’re ready to carpe diem this shit — that 99% of your time is spent alone, fingers primed on the keyboard and eyes glued to the screen, trying to figure out what the heck is going on.
 

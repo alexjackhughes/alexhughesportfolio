@@ -6,7 +6,7 @@ const HomeSplash: React.FC = () => {
           Hi, I'm <span className="skittles">Alex</span>.
         </h1>
         <div className="poppins text-sky-100 text-center md:text-left mt-6 text-xl">
-          <p className="mb-1">CTO of Loopin and king of the north.</p>
+          <p className="mb-1">CTO of Loopin and king of the north</p>
         </div>
       </div>
       <img src="/waves/home.svg" className="w-screen" />

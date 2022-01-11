@@ -20,9 +20,6 @@ module.exports = {
         },
       },
     },
-    boxShadow: {
-      "2xl": "0px 64px 128px rgba(7, 18, 99, 0.08)",
-    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
