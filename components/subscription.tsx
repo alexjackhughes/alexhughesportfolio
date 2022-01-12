@@ -23,14 +23,14 @@ const Subscription: React.FC = () => {
   return (
     <Container>
       <div className="flex flex-col mt-10 lg:mt-32 text-center md:mx-10 lg:mx-32">
-        <h3 className="text-4xl lg:text-6xl mb-6 leading-snug font-bold">
+        <h3 className="text-4xl lg:text-6xl mb-6 leading-snug font-bold text-sky-100">
           What next?
         </h3>
         <p className="text-sky-100 text-xl mb-5">
           A little less than a decade ago I quit my job, spent my last £100 on
           tinned food, and began freelancing full-time with zero clients. Jump
           forward a few years and I'm the CTO of Loopin, which in my not so
-          humble opinion is about revolutionise how startups build culture
+          humble opinion is about to revolutionise how startups build culture
           remotely.
         </p>
         <p className="text-sky-100 text-xl mb-5">
@@ -64,7 +64,7 @@ const Subscription: React.FC = () => {
                   value={email}
                   placeholder="johnny@cash.com"
                   onChange={(e) => setEmail(e.target.value)}
-                  className="text-sky-900 poppins border border-sky-800 p-3 rounded placeholder:text-sky-900 focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-900 w-full"
+                  className="text-sky-900 poppins border border-sky-800 p-3 rounded placeholder:text-sky-400 focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-40 w-full"
                 />
                 <button
                   className="bg-sky-800 p-3 mt-6 rounded-lg text-white poppins text-lg font-semibold focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-900 shadow-xl"

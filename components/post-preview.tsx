@@ -30,11 +30,11 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
           />
         </div>
         <div className="mx-6 my-4">
-          <h3 className="text-3xl mb-3 leading-snug font-bold mr-10">
+          <h3 className="text-3xl mb-3 leading-snug font-bold mr-10 text-sky-100">
             <a>{title}</a>
           </h3>
           <div className="flex flex-col justify-right items-end">
-            <p className="bg-slate-100 p-2 rounded poppins text-sky-800 mb-6">
+            <p className="bg-sky-100 p-2 rounded poppins text-sky-800 mb-6">
               {`${day}${nth(day)} ${today.format("MMMM")}`}
             </p>
           </div>

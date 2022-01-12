@@ -5,7 +5,7 @@ const HomeAbout: React.FC = () => {
     <>
       <div className="bg-sky-800 py-20">
         <Container>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold md:leading-none text-center md:text-left text-white mb-10">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold md:leading-none text-center md:text-left text-sky-100 mb-10">
             About me
           </h1>
           <div className=" lg:w-4/5">

@@ -14,7 +14,7 @@ const Naivgation = () => {
       <div className="flex flex-col xl:flex-row justify-between items-center container mx-auto px-5 xl:px-64">
         <Logo />
         <div className="order-3 md:order-2 hidden md:flex">
-          <Social />
+          <Social isWhite />
         </div>
         <NavLinks />
       </div>
