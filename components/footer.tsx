@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Container from "./container";
 import Social from "./social";
 import Subscription from "./subscription";
 

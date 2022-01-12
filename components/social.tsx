@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Social: React.FC<Props> = ({ isWhite = false }) => {
-  const color = isWhite ? "text-sky-100" : "text-sky-900";
+  const color = isWhite ? "text-sky-100 hover:text-sky-900" : "text-sky-900";
   return (
     <div className="flex flex-row items-center w-full justify-center">
       <a
