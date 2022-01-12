@@ -64,7 +64,7 @@ const Subscription: React.FC = () => {
                   value={email}
                   placeholder="johnny@cash.com"
                   onChange={(e) => setEmail(e.target.value)}
-                  className="text-sky-900 poppins border border-sky-800 p-3 rounded placeholder:text-sky-400 focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-40 w-full"
+                  className="text-sky-900 poppins border border-sky-800 p-3 rounded placeholder:text-sky-400 focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-400 w-full"
                 />
                 <button
                   className="bg-sky-800 p-3 mt-6 rounded-lg text-white poppins text-lg font-semibold focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-900 shadow-xl"

@@ -12,6 +12,7 @@ const Social: React.FC<Props> = ({ isWhite = false }) => {
         href="https://twitter.com/alexjackhughes"
         target="_blank"
         rel="noreferrer noopener"
+        className="focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-100"
       >
         <FontAwesomeIcon
           icon={{ prefix: "fab", iconName: "twitter" }}
@@ -22,6 +23,7 @@ const Social: React.FC<Props> = ({ isWhite = false }) => {
         href="https://github.com/alexjackhughes"
         target="_blank"
         rel="noreferrer noopener"
+        className="focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-100 rounded"
       >
         <FontAwesomeIcon
           icon={{ prefix: "fab", iconName: "github-alt" }}
@@ -32,6 +34,7 @@ const Social: React.FC<Props> = ({ isWhite = false }) => {
         href="https://linkedin.com/in/alexjackhughes"
         target="_blank"
         rel="noreferrer noopener"
+        className="focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-100 rounded"
       >
         <FontAwesomeIcon
           icon={{ prefix: "fab", iconName: "linkedin-in" }}

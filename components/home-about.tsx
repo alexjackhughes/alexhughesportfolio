@@ -51,7 +51,7 @@ const Link: React.FC<Props> = ({ href, children }) => (
     href={href}
     target="_blank"
     rel="noreferrer"
-    className="hover:underline hover:underline-offset-1 text-sky-100 font-semibold"
+    className="hover:underline hover:underline-offset-1 text-sky-100 font-semibold focus:outline focus:outline-offset-2 focus:outline-1 focus:outline-sky-100 rounded"
   >
     {children}
   </a>
