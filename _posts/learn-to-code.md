@@ -12,7 +12,7 @@ ogImage:
 
 It's late January.
 
-The buckfizz has run out, you've swept up the confetti, and you kissed your gran goodbye until next Christmas.
+The Buck's Fizz has run out, you've swept up the confetti, and you kissed your gran goodbye until next Christmas.
 
 It's time to get back to work.
 
