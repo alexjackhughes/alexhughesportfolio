@@ -1,6 +1,6 @@
 ---
 title: "How to build things"
-excerpt: "The buckfizz has run out, you've swept up the confetti, and you kissed your gran goodbye until next Christmas."
+excerpt: "The buck's fizz has run out, you've swept up the confetti, and you kissed your gran goodbye until next Christmas."
 coverImage: "/assets/blog/learn-to-code/cover.jpg"
 date: "2022-01-22T10:35:07.322Z"
 author:

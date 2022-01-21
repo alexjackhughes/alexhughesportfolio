@@ -7,7 +7,6 @@ import Layout from "../../components/layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
-import { CMS_NAME } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import PostType from "../../types/post";
 import Avatar from "../../components/avatar";
@@ -31,6 +30,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
           property="og:image"
           content={`https://alexhughes.io${post.ogImage.url}`}
         />
+        <meta property="og:description" content={post.excerpt} />
       </Head>
       <Layout preview={preview}>
         <Container>

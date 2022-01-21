@@ -1,6 +1,6 @@
 ---
 title: "Speaking at MintBean"
-excerpt: "My talk in 2020 explaining what I focus on as a junior developer."
+excerpt: "My talk in 2020 explaining what I would focus on as a junior developer."
 coverImage: "/assets/blog/first-talk/cover.jpg"
 date: "2021-12-23T11:40:07.322Z"
 author:

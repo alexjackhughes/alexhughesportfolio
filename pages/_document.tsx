@@ -11,11 +11,11 @@ export default class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="Hi, I’m Alex Hughes! I'm a Full-Stack Engineer, and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React, GraphQL, and TypeScript."
+            content="Hi, I’m Alex Hughes! I'm a Full-Stack Engineer and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React and TypeScript."
           />
           <meta
             property="og:description"
-            content="Hi, I’m Alex Hughes! I'm a Full-Stack Engineer, and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React, GraphQL, and TypeScript."
+            content="Hi, I’m Alex Hughes! I'm a Full-Stack Engineer and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React and TypeScript."
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://alexhughes.io/" />
