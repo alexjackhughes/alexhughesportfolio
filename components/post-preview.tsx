@@ -1,9 +1,6 @@
 import Avatar from "./avatar";
-import DateFormatter from "./date-formatter";
 import CoverImage from "./cover-image";
 import Link from "next/link";
-import Author from "../types/author";
-import lengthToMinutes from "../lib/lengthToMinutes";
 import dayjs from "dayjs";
 
 type Props = {
@@ -20,7 +17,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
 
   return (
     <Link as={`/posts/${slug}`} href="/posts/[slug]">
-      <div className="rounded-2xl cursor-pointer shadow-2xl bg-sky-800">
+      <div className="rounded-2xl cursor-pointer shadow-2xl bg-sky-800 group">
         <div className="mb-5 rounded-md">
           <CoverImage
             slug={slug}
@@ -31,7 +28,7 @@ const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) => {
         </div>
         <div className="mx-6 my-4">
           <h3 className="text-3xl mb-3 leading-snug font-bold mr-10 text-sky-100">
-            <a>{title}</a>
+            <a className="text-sky-100">{title}</a>
           </h3>
           <div className="flex flex-col justify-right items-end">
             <p className="bg-sky-100 p-2 rounded poppins text-sky-800 mb-6">

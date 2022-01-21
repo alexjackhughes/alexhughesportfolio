@@ -16,6 +16,7 @@ type Props = {
 
 const Index = ({ allPosts }: Props) => {
   const morePosts = allPosts.slice(0, 2);
+
   return (
     <>
       <Layout>

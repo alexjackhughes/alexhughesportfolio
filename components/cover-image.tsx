@@ -19,7 +19,8 @@ const CoverImage = ({
       src={src}
       alt={`Cover Image for ${title}`}
       className={cn(`shadow-sm ${isFullyRounded} `, {
-        "hover:shadow-lg transition-shadow duration-200": slug,
+        "transition-shadow duration-200 group-hover:rounded-2xl group-hover:scale-105":
+          slug,
       })}
     />
   );

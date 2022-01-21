@@ -21,15 +21,26 @@ const HomeAbout: React.FC = () => {
             </p>
             <p className="text-sky-100 text-xl mb-5">
               Right now, I'm the CTO of{" "}
-              <Link href="https://letsloopin.com">Loopin</Link> - a startup
-              driving much needed change in building startup culture. Before
-              that I worked at a couple of pretty successful startups,{" "}
-              <Link href="https://tumelo.com">Tumelo</Link> and{" "}
-              <Link href="https://www.huckletree.com">Huckletree</Link>{" "}
+              <Link href="https://letsloopin.com">
+                <a>Loopin</a>
+              </Link>
+              - a startup driving much needed change in building startup
+              culture. Before that I worked at a couple of pretty successful
+              startups,{" "}
+              <Link href="https://tumelo.com">
+                <a>Tumelo</a>
+              </Link>{" "}
+              and{" "}
+              <Link href="https://www.huckletree.com">
+                <a>Huckletree</a>
+              </Link>{" "}
               included. And before <span className="italic">that</span>, I
-              designed the UI/UX for UpdraftPlus - which, with more than 3
-              million downloads is one of the most downloaded plugins on
-              WordPress.
+              designed the UI/UX for{" "}
+              <Link href="https://wordpress.org/plugins/updraftplus/">
+                <a>UpdraftPlus</a>
+              </Link>{" "}
+              - which, with more than 3 million downloads is one of the most
+              downloaded plugins on WordPress.
             </p>
             <p className="text-sky-100 text-xl">
               But enough about me, how have you been?

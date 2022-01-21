@@ -13,8 +13,6 @@ type Props = {
 };
 
 const Index = ({ allPosts }: Props) => {
-  const morePosts = allPosts;
-
   return (
     <>
       <Layout>
@@ -24,7 +22,7 @@ const Index = ({ allPosts }: Props) => {
         <BlogSplash />
         <Container>
           <div className="mt-20">
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {allPosts.length > 0 && <MoreStories posts={allPosts} />}
           </div>
         </Container>
       </Layout>

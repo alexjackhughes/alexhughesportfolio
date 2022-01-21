@@ -73,3 +73,8 @@ h6 {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+
+a {
+  color: #5fd2fa;
+  font-weight: bold;
+}
