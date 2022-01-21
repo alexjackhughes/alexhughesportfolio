@@ -15,8 +15,8 @@ const Thanks = () => {
         <Confetti width={width} height={height} />
         <div className="absolute w-screen">
           <Naivgation />
-          <div className="w-1/3 mt-64 mx-auto h-full bg-sky-800 rounded-xl shadow-2xl py-8 px-8 text-center">
-            <h3 className="text-6xl mb-3 leading-snug font-bold text-white">
+          <div className="w-10/12 lg:w-1/3 mt-32 lg:mt-64 mx-auto h-full bg-sky-800 rounded-xl shadow-2xl py-8 px-8 text-center">
+            <h3 className="text-4xl lg:text-6xl mb-3 leading-snug font-bold text-white">
               Wow, thanks! 🎉
             </h3>
             <p className="text-sky-100 text-xl poppins">
