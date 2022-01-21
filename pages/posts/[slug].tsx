@@ -29,7 +29,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
         <title>{post.title} | Blog by Alex Hughes</title>
         <meta
           property="og:image"
-          content={`https://alexhughes.io/${post.ogImage.url}`}
+          content={`https://alexhughes.io${post.ogImage.url}`}
         />
       </Head>
       <Layout preview={preview}>
