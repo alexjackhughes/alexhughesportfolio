@@ -12,7 +12,7 @@ const Thanks = () => {
     <>
       <Meta />
       <div className="relative h-screen w-screen">
-        <Confetti width={width} height={height} />
+        <Confetti width={width} height={height} numberOfPieces={300} />
         <div className="absolute w-screen">
           <Naivgation />
           <div className="w-10/12 lg:w-1/3 mt-32 lg:mt-64 mx-auto h-full bg-sky-800 rounded-xl shadow-2xl py-8 px-8 text-center">
