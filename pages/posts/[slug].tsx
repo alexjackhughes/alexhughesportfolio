@@ -24,30 +24,32 @@ const Post = ({ post, morePosts, preview }: Props) => {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <Layout preview={preview}>
-      <Container>
-        {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
-        ) : (
-          <>
-            <article>
-              <Head>
-                <title>{post.title} | Blog by Alex Hughes</title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                textLength={post.content.length}
-              />
-              <PostBody content={post.content} />
-              <Avatar name={post.author.name} picture={post.author.picture} />
-            </article>
-          </>
-        )}
-      </Container>
-    </Layout>
+    <>
+      <Head>
+        <title>{post.title} | Blog by Alex Hughes</title>
+        <meta property="og:image" content={post.ogImage.url} />
+      </Head>
+      <Layout preview={preview}>
+        <Container>
+          {router.isFallback ? (
+            <PostTitle>Loading…</PostTitle>
+          ) : (
+            <>
+              <article>
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                  textLength={post.content.length}
+                />
+                <PostBody content={post.content} />
+                <Avatar name={post.author.name} picture={post.author.picture} />
+              </article>
+            </>
+          )}
+        </Container>
+      </Layout>
+    </>
   );
 };
 

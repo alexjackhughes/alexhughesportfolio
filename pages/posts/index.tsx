@@ -17,7 +17,11 @@ const Index = ({ allPosts }: Props) => {
     <>
       <Layout>
         <Head>
-          <title>Alex Hughes | CTO & Startup Founder in Bristol</title>
+          <title>Blog by Alex Hughes | CTO & Startup Founder in Bristol</title>
+          <meta
+            property="og:image"
+            content="https://alexhughes.io/template.png"
+          />
         </Head>
         <BlogSplash />
         <Container>

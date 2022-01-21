@@ -19,10 +19,6 @@ export default class MyDocument extends Document {
           />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://alexhughes.io/" />
-          <meta
-            property="og:image"
-            content="https://alexhughes.io/template.png"
-          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
