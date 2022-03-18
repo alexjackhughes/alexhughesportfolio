@@ -27,35 +27,39 @@ const Logo = () => {
 
   return (
     <div className="order-1">
-      {showBlink ? (
-        <Link href="/">
-          <Image
-            onClick={() => {
-              setShowBlink(false);
-            }}
-            src="/logo/Alex Hughes | Logo - Blink.svg"
-            className="cursor-pointer bounce"
-            height={75}
-            width={75}
-          />
-        </Link>
-      ) : (
+      <div
+        onClick={() => {
+          setShowBlink(false);
+        }}
+        className={`${showBlink ? "" : "hidden"}`}
+      >
         <Image
-          onClick={() => {
-            setShowBlink(true);
-          }}
+          src="/logo/Alex Hughes | Logo - Blink.svg"
+          className={`cursor-pointer bounce `}
+          height={75}
+          width={75}
+          priority
+        />
+      </div>
+      <div
+        onClick={() => {
+          setShowBlink(true);
+        }}
+        className={`${showBlink ? "hidden" : ""}`}
+      >
+        <Image
           src="/logo/Alex Hughes | Logo.svg"
-          className="cursor-pointer"
+          className={`cursor-pointer`}
           height={75}
           width={75}
         />
-      )}
+      </div>
     </div>
   );
 };
 
 const NavLinks: React.FC = () => (
-  <div className="order-2 md:order-3 mb-3 sm:mb-0 mt-2 sm:mt-0">
+  <div className="order-2 md:order-3 my-4 sm:my-0">
     <NavLink href="/">HOME</NavLink>
     <NavLink href="/posts">LIBRARY</NavLink>
   </div>

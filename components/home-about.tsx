@@ -12,9 +12,9 @@ const HomeAbout: React.FC = () => {
             <p className="text-sky-100 text-xl mb-5">
               My name is Alexander Jack Hughes, but you can call me Alex. I'm a
               full-stack engineer and builder of high-growth startups. To give
-              you a quick history lesson; I've been coding for the better part
-              of a decade, whilst achieving an MSc in Computer Science and
-              writing a few things for Hackernoon.
+              you a quick history lesson; I've spent the last decade tinkering
+              away, completing a MSc in Computer Science, and writing a few
+              things for Hackernoon.
             </p>
             <p className="text-sky-100 text-xl mb-5">
               I can name drop if you'd like?
@@ -24,9 +24,9 @@ const HomeAbout: React.FC = () => {
               <Link href="https://letsloopin.com">
                 <a>Loopin</a>
               </Link>
-              - a startup driving much needed change in building startup
-              culture. Before that I worked at a couple of pretty successful
-              startups,{" "}
+              - a people analytics platform that's the future of how you build
+              good company culture. Before that I worked at a couple of pretty
+              successful startups,{" "}
               <Link href="https://tumelo.com">
                 <a>Tumelo</a>
               </Link>{" "}
