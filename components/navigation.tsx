@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import Social from "./social";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Naivgation = () => {
   return (
@@ -59,9 +60,15 @@ const Logo = () => {
 };
 
 const NavLinks: React.FC = () => (
-  <div className="order-2 md:order-3 my-4 sm:my-0">
+  <div className="order-2 md:order-3 my-4 sm:my-0 flex flex-row">
     <NavLink href="/">HOME</NavLink>
     <NavLink href="/posts">LIBRARY</NavLink>
+    <Link href="https://www.redbubble.com/people/alexjackhughes/">
+      <FontAwesomeIcon
+        icon={{ prefix: "fas", iconName: "cart-plus" }}
+        className={`text-sm flex h-12 w-12 hover:bg-slate-100 p-3 rounded text-sky-100 hover:text-sky-900 ml-3 cursor-pointer`}
+      />
+    </Link>
   </div>
 );
 
